@@ -1,0 +1,315 @@
+1. oops
+2. data binding and which languages supports data binding
+3. mutable and immutable data types difference
+4. string is default data type returned by the input function in python 3.x
+5. use of end parameter in print() :- to specify the string appended after the end of line
+6. sep an separator used print("j","k",sep="3")
+7. def factorial(n):
+  if n == 0 or n == 1:
+    return 1
+  else:
+    return n * factorial(n - 1)
+
+# Driver code
+num = int(input("Enter a non-negative number: "))
+fact = factorial(num)
+
+print("The factorial of", num, "is", fact)
+
+8. for i in range(3):
+  a = int(input("enter the subject 1 IA1 marks"))
+  b = int(input("enter the subject 2 IA1 marks"))
+  c = int(input("enter the subject 3 IA1 marks"))
+  d = int(input("enter the subject 4 IA1 marks"))
+  e = int(input("enter the subject 5 IA1 marks"))
+  y = a + b + c + d + e
+  print(y)
+  print(y / 5)
+
+9. true or false then only true and false
+10. conversion of ascii lower case to uppercase
+11. zip
+12. keywords lamda nonlocal raise yield  
+13. nl=[1,2,3]
+str_list=['o','t']
+nt=('o','t','th','f')
+result=zip(nl,nt)
+rs=set(result)
+print(rs)
+rs=zip(nl,str_list,nt)
+rs=set(result)
+print(rs)
+
+14. num="10"
+print(type(num))
+nums=int(num)
+print(type(nums))
+
+15. from enum import Enum
+class Day(Enum):
+    M=1
+    T=2
+    W=3
+print(Day.M)
+print(Day.M.name)
+print(Day.M.value)
+
+16. nzero=42
+bool_nzero=bool(0)
+print(bool_nzero)
+
+
+17. strip ,lower,upper split ,join, replace, find ,index
+
+18. #include<stdio.h>
+	int a=10,b=5,c=5;
+	int d;
+	d=a==(b+c);
+	print("%d",&d);
+
+19. // Online C compiler to run C program online
+#include <stdio.h>
+int main() {
+ static int i=5;
+ if(--i){
+     main();
+     printf("%d",i);
+ } 
+}
+
+20. // Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+ static int i=5;
+ printf("%d",i--);
+ if(i){
+     main();
+ }
+    
+}
+
+21. method and function overloading
+
+
+22. class Vc:
+    def __init__(self, input_string):
+        self.input_string = input_string
+
+    def count_vowels(self):
+        count = 0
+        vowels = "aeiouAEIOU"
+        for char in self.input_string:
+            if char in vowels:
+                count += 1
+        print(count) 
+
+my_string = "Hello, World!"
+my_vc = Vc(my_string)
+vowel_count = my_vc.count_vowels()
+
+23. class Shape:
+  def __init__(self, name):
+    self.name = name
+
+  def area(self):
+    raise NotImplementedError("Subclass must implement area() method")
+
+class Rectangle(Shape):
+
+  def __init__(self, width, height):
+    super().__init__("Rectangle")  
+    self.width = width
+    self.height = height
+
+  def area(self):
+    return self.width * self.height
+
+
+rectangle = Rectangle(5, 3)
+
+print(f"Shape name: {rectangle.name}")
+
+print(f"Area of the rectangle: {rectangle.area()}")
+
+
+24. >>>> zero fill right shift oprtator
+
+25.puclic class test{
+    puclic static void main (String[] args)
+    {
+        class array_variable[]=new char[10];
+        for(int i=0;i<10 ; ++i){
+            array_variable[i]=i;
+            System.out.println(array_variable[i]);
+        }
+    }
+}
+
++---------------------------------------------------------------+
+26. int main()
+{
+    int x;
+    printf("%d",scanf("%d",&x));
+    return 1;
+
+}
+
+27. int main(){
+int i=0;
+for (i=0;i<20;i++){
+switch(i){
+case 0:
+i+=5
+case 1:
+i+=2
+case 5:
+i+=5
+default:
+i+=4
+
+}
+printf("%d",&i);
+
+}
+}  
+
+
+
+28.while is excecuted atleast once but for may or mayont be excuted evn once
+
+29. class Shape:
+    print("Drawing a shape")
+class Circle(Shape):
+    def draw(self):
+        print("Drawing a circle")
+class Rectangle(Shape):
+    def draw(self):
+        print("Drawing a rectangle")
+shape_choice = input("What shape would you like to choose? ")
+if shape_choice == "Circle":
+    shape = Circle()
+elif shape_choice == "Rectangle":
+    shape = Rectangle()
+else :
+    print("Invalid choice")
+    exit()
+shape.draw()
+
+
+
+
+
+30. int c=5
+	no=1000;
+	do{
+	no/=c1	
+	}while(c--)
+	printf(%d"&no);
+
+
+
+31. class Car :
+    def _init_(self, make, model, year):
+        self.__make = make
+        self.__model = model
+        self.__year = year
+    def set_make(self, make):
+        self.__make = make
+    def set_model(self, model):
+        self.__model = model
+    def set_year(self, year):
+            self.__year = year
+        
+    def get_make(self):
+        return self.__make
+    def get_model(self):
+        return self.__model
+    def get_year(self):
+        return self.__year
+    
+    def display_info(self):
+        print("Car Details : ")
+        print("Make : ",self.__make)
+        print("Model : ",self.__model)
+        print("Year : ",self.__year) 
+
+
+
+
+32. what is database
+33. what is a table
+34. dbms
+35. what is sql
+36. what are table and fields
+37. constraints of sql
+38. index data structures
+
+----------------------------------------------------------------------------------------------------------------------
+
+39. try:
+    n=10
+    d=0
+    r=n/d
+
+except ZeroDivisionError:
+    print("division by zero")
+
+finally:
+    print("this is always executed")
+    
+
+
+40. def devide(x,y):
+    try:
+        r=x//y
+    except ZeroDivisionError:
+        print("division by zero")
+    else:
+        print("result is",r)
+    finally:
+        print("executing finally clause")
+devide(3,2)
+devide(3,0)
+
+41.import time
+while True:
+    current_time = time.localtime()
+    formatted_time = time.strftime("%I:%M:%S %p", current_time)
+    print(formatted_time)
+    time.sleep(5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
